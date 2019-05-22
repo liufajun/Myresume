@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>选项卡</title>
+		<style type="text/css">
+		body,ul,li{margin: 0;padding: 0;font: 12px normal "宋体", Arial, Helvetica, sans-serif;list-style: none;}
+		
+		
+		#tabbox{ width:411px; overflow:hidden; margin:0 auto;}
+		.tab_conbox{border: 1px solid #999;border-top: none;}
+		.tab_con{ display:none;}
+		
+		.tabs{height: 32px;border-bottom:1px solid #999;border-left: 1px solid #999;width: 100%;}
+		.tabs li{height:31px;line-height:31px;float:left;border:1px solid #999;border-left:none;margin-bottom: -1px;background: #e0e0e0;overflow: hidden;position: relative;}
+		.tabs li a {display: block;padding: 0 20px;border: 1px solid #fff;outline: none;text-decoration: none;color: #000;font-size: 14px;}
+		.tabs li a:hover {background: #ccc;}    
+		.tabs .thistab,.tabs .thistab a:hover{background: #fff;border-bottom: 1px solid #fff;}
+		
+		.tab_con {padding:12px;font-size: 14px; line-height:175%;}
+		.tab_con p span a{}
+		</style>
+		<script src="http://lib.sinaapp.com/js/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+		    jQuery.jqtab = function(tabtit,tabcon) {
+		        $(tabcon).hide();
+		        $(tabtit+" li:first").addClass("thistab").show();
+		        $(tabcon+":first").show();
+		    
+		        $(tabtit+" li").click(function() {
+		            $(tabtit+" li").removeClass("thistab");
+		            $(this).addClass("thistab");
+		            $(tabcon).hide();
+		            var activeTab = $(this).find("a").attr("tab");
+		            $("#"+activeTab).fadeIn();
+		            return false;
+		        });
+		        
+		    };
+		    /*调用方法如下：*/
+		    $.jqtab("#tabs",".tab_con");
+		    
+		});
+		</script>
+		</head>
+		<body>
+		<div id="tabbox">
+		
+		    <ul class="tabs" id="tabs">
+		       <li><a href="http://www.51xuediannao.com/js/nav/" tab="tab1">导航菜单</a></li>
+		       <li><a href="http://www.51xuediannao.com/js/slide/" tab="tab2">焦点幻灯片</a></li>
+		       <li><a href="http://www.51xuediannao.com/js/gg/" tab="tab3">广告代码</a></li>
+		       <li><a href="http://www.51xuediannao.com/js/texiao/" tab="tab4">网页特效</a></li>
+		    </ul>
+		    <ul class="tab_conbox">
+		        <li id="tab1" class="tab_con">
+		           <p><span><a href="http://www.51xuediannao.com/">懒人建站</a>只收录实用和能提高用户体验的代码</span><br />
+				   <span>我们只想解放出你的部分写代码时间来思考更高层次的设计，而不是要你懒惰、拼凑。</span></p>
+		        </li>
+		            
+		        <li id="tab2" class="tab_con">
+		            <p><span><a href="http://www.51xuediannao.com/">懒人建站</a>只收录实用和能提高用户体验的代码</span><br />
+		<span>我们只想解放出你的部分写代码时间来思考更高层次的设计，而不是要你懒惰、拼凑。</span></p>
+		        </li>
+		    
+		        <li id="tab3" class="tab_con">
+		            <p><span><a href="http://www.51xuediannao.com/">懒人建站</a>只收录实用和能提高用户体验的代码</span><br />
+		<span>我们只想解放出你的部分写代码时间来思考更高层次的设计，而不是要你懒惰、拼凑。</span></p>
+		        </li>
+		    
+		        <li id="tab4" class="tab_con">
+		            <p><span><a href="http://www.51xuediannao.com/">懒人建站</a>只收录实用和能提高用户体验的代码</span><br />
+		<span>我们只想解放出你的部分写代码时间来思考更高层次的设计，而不是要你懒惰、拼凑。</span></p>
+		        </li>
+		    </ul>
+		    
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/newsList.css">
+    <title>新闻列表页</title>
+    <style>
+        #news-list .pagination-box{width:376px;height:54px;margin:0 auto;}
+        #news-list .news-list-right .pagination {width: 100%;margin:30px 0 20px;}
+        .pagination li {margin-top:0;}
+        #news-list .pagination li a{display:block;float:left;height:100%;width:50px;height:54px;line-height: 54px;text-align: center;
+            font-size:14px; border:1px solid #ccc;border-left:none;box-sizing: border-box;color:#b4b4b4;}
+        #news-list .pagination li .prev{width:63px;border-left:1px solid #ccc;}
+        #news-list .pagination li .next{width:63px;}
+        .selected{background:#BA1C1C;border: none !important;color:#fff !important;}
+        @media all and (max-width:767px){
+            /* .nav{display:none !important;} */
+           
+        
+            .pagination li {margin-top:0;}
+            #news-list .pagination li a{display:block;float:left;height:100%;width:40px;height:46px;line-height: 46px;text-align: center;
+                font-size:12px; border:1px solid #ccc;border-left:none;;box-sizing: border-box;color:#b4b4b4;}
+            #news-list .pagination li .prev{width:50px;border-left:1px solid #ccc;}
+            #news-list .pagination li .next{width:50px;}
+        
+        }
+        @media all and (max-width:480px){
+            #news-list .pagination-box{width:276px;margin:0 auto;}
+       
+            #news-list .pagination li a{display:block;float:left;height:100%;width:36px;height:38px;line-height: 38px;text-align: center;
+                font-size:12px; border:1px solid #ccc;border-left:none;;box-sizing: border-box;color:#b4b4b4;}
+            #news-list .pagination li .prev{width:48px;border-left:1px solid #ccc;}
+            #news-list .pagination li .next{width: 48px;}
+        }
+    </style>
+   
+</head>
+<body>
+    <header id="header" class="clearfloat " >   
+        <div class="head-left-logo left"></div>
+        <div class="head-right-phone right "></div>
+    </header>
+    <section class="xs-header" >
+        <div class="header-logo"></div>
+        <a href="#" class="nav-trigger">
+            <span class="nav-icon"></span>
+        </a>
+
+        <nav class="nav-bar" >
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:#ccc;">香港公司税务网</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">新闻资讯</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">香港公司报税</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">香港公司年审</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">香港银行开户</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#">香港公司注册</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">香港商业服务</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">常见问题</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <nav id="nav" class=" clearfloat big-nav" > 
+        <ul class="navbar  right clearfloat"> 
+            <li class="active first-items" ><a href="#">香港公司税务网</a></li> 
+            <li><a href="http://www.hkshuiwu.com/News.html">新闻资讯</a></li> 
+            <li><a href="http://www.hkshuiwu.com/Hong-Kong-Taxation.html">香港公司报税</a></li> 
+            <li><a href="http://www.hkshuiwu.com/Annual-Examination.html">香港公司年审</a></li> 
+            <li><a href="http://www.hkshuiwu.com/Hong-Kong-Bank.html">香港银行开户</a></li> 
+            <li><a href="http://www.hkshuiwu.com/Hong-Kong-Company.html">香港公司注册</a></li> 
+            <li><a href="http://www.hkshuiwu.com/Hong-Kong-Services.html">香港商业服务</a></li> 
+            <li class="last-items"><a href="http://www.hkshuiwu.com/Question.html">常见问题</a></li> 
+        </ul> 
+    </nav>
+    <section id="banner">
+        <div class="swiper-container banner-swiper" >
+            <div class="swiper-wrapper" style="width:100%;">
+                <a href="#" class="swiper-slide">
+                    <img src="images/fullimage3.jpg" alt="" />
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img src="images/fullimage4.jpg" alt="" />
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img src="images/fullimage5.jpg" alt="" />
+                </a>
+
+            </div>
+            <div class="swiper-button-prev banner-button">
+                <i class="iconfont icon-prev"></i>
+            </div>
+            <div class="swiper-button-next banner-button">
+                <i class="iconfont icon-next"></i>
+            </div>
+            <div class="swiper-pagination"></div>
+            
+        </div>
+    </section>
+    <section id="news-list" class="clearfloat" >
+        <aside class="news-list-left left">
+            <h3 class="aside-title">新闻</h3>
+            <ul class="aside-items-news aside-comm-style">
+                <li><a href="">党务公开</a></li>
+                <li><a href="">政务公开</a></li>
+                <li><a href="">政策法规</a></li>
+                <li><a href="">乡镇动态</a></li>
+                <li><a href="">招商引资</a></li>
+                <li><a href="" style="border:none;">便民服务</a></li>
+            </ul>
+            <h3 class="aside-title">为你推荐</h3>
+            <ul class="recommend aside-comm-style">
+                <li><a href="">中华人民共和国公共文化服务保障法</a></li>
+                <li><a href="">有利于金融市场扩大对外开放--央行有关负责人就“债券通”答问</a></li>
+                <li><a href="">2017年奋发镇人民政府预算基本情况说明</a></li>
+                <li><a href="">【创文进行时】创建优美环境，共创文明城市</a></li>
+                <li><a href="">【奋发镇】讲政治强党性 守纪律强作风</a></li>
+            </ul>
+        </aside>
+        <div class="news-list-right right">
+            <div class="news-items">
+                <h3 class="news-text-title">
+                     <a >
+                        中华人民共和国公共文化服务保障法
+                    </a>
+                </h3>
+               
+                <div class="news-text">
+                    中华人民共和国公共文化服务保障法（2016年12月25日第十二届全国人民代表大会常务委员会第二十五次会议通过）
+                    中华人民共和国主席令第六十号《中华人民共和国公共文化服务保障法》已由中华人民共和国第十二届全国人民代表
+                    大会常务委员会第二十五次会议于2016年12月25日通过，现予公布，自2017年3月1日起施行。中华人民共和国主席
+                    习近平2016年12月25日目录第一章总则第二章公共文化设施建设
+                </div>
+                <div class="news-times-footer">
+                    <p class="news-date">2018-07-16 <i class="iconfont icon-yanjing"></i> 0</p>
+                </div>
+            </div>
+             <div class="news-items">
+                 <h3 class="news-text-title">
+                     <a >
+                        中华人民共和国公共文化服务保障法
+                    </a>
+                 </h3>
+            
+                <div class="news-text">
+                    中华人民共和国公共文化服务保障法（2016年12月25日第十二届全国人民代表大会常务委员会第二十五次会议通过）
+                    中华人民共和国主席令第六十号《中华人民共和国公共文化服务保障法》已由中华人民共和国第十二届全国人民代表
+                    大会常务委员会第二十五次会议于2016年12月25日通过，现予公布，自2017年3月1日起施行。中华人民共和国主席
+                    习近平2016年12月25日目录第一章总则第二章公共文化设施建设
+                </div>
+                <div class="news-times-footer">
+                    <p class="news-date">2018-07-16 <i class="iconfont icon-yanjing"></i> 0</p>
+                </div>
+            </div>
+             <div class="news-items">
+                 <h3 class="news-text-title">
+                     <a >
+                        中华人民共和国公共文化服务保障法
+                    </a>
+                 </h3>
+                <div class="news-text">
+                    中华人民共和国公共文化服务保障法（2016年12月25日第十二届全国人民代表大会常务委员会第二十五次会议通过）
+                    中华人民共和国主席令第六十号《中华人民共和国公共文化服务保障法》已由中华人民共和国第十二届全国人民代表
+                    大会常务委员会第二十五次会议于2016年12月25日通过，现予公布，自2017年3月1日起施行。中华人民共和国主席
+                    习近平2016年12月25日目录第一章总则第二章公共文化设施建设
+                </div>
+                <div class="news-times-footer">
+                    <p class="news-date">2018-07-16 <i class="iconfont icon-yanjing"></i> 0</p>
+                </div>
+            </div>
+            <div class="news-items">
+                 <h3  class="news-text-title">
+                     <a>
+                        中华人民共和国公共文化服务保障法
+                    </a>
+                 </h3>
+                <div class="news-text">
+                    中华人民共和国公共文化服务保障法（2016年12月25日第十二届全国人民代表大会常务委员会第二十五次会议通过）
+                    中华人民共和国主席令第六十号《中华人民共和国公共文化服务保障法》已由中华人民共和国第十二届全国人民代表
+                    大会常务委员会第二十五次会议于2016年12月25日通过，现予公布，自2017年3月1日起施行。中华人民共和国主席
+                    习近平2016年12月25日目录第一章总则第二章公共文化设施建设
+                </div>
+                <div class="news-times-footer">
+                    <p class="news-date">2018-07-16 <i class="iconfont icon-yanjing"></i> 0</p>
+                </div>
+            </div>
+            <div class=" pagination">
+                <ul class="pagination-box">
+                    <li><a href="" class="prev">上一页</a></li>
+                    <li ><a href="" class="selected">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li><a href="" class="next">下一页</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <footer id="footer" >
+        <div class="contact">
+            <h3 class="contact-title h3-title title-hover"> <p>联系我们</p> </h3>
+            <div class="sz-company clearfloat company-contact">
+                <p class="sz-phone">
+                    <i class="iconfont icon-dianhua2"></i>
+                    <span>电话热线：</span>0755-83234665或0755-83234665
+                </p>
+                <p class="sz-qq">
+                    <i class="iconfont icon-qq"></i>
+                    <span>企业QQ：
+                        <a class="qq" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=800007770&f=1&ty=1&aty=0&a=&from=6">800007770</a>
+                    </span>
+                </p>
+                <p class="sz-addre">
+                    <i class="iconfont icon-dizhi-01"></i>
+                    <span>地址：</span>深圳市福田中心区福华三路卓越世纪中心4号楼1508室
+                </p>
+                
+            </div>
+            <div class="hk-company company-contact">
+                <p class="hk-phone ">
+                    <i class="iconfont icon-dianhua2"></i>
+                    <span>电话热线：</span>00852-28113620
+                </p>
+                
+                <p class="hk-addre ">
+                    <i class="iconfont icon-dizhi-01"></i>
+                    <span>地址：</span>香港湾仔轩尼诗道253-261号依时商业大厦1902室
+                </p>
+            </div>
+        </div>
+        <div class="friend-href ">     
+            <div class="friend-href-box " >
+                <b style="color:#b4b4b4;">友情链接：</b>
+                <a href="http://www.hkshuiwu.com/" target="_blank">香港骏诚会计师事务所</a>
+                <a href="http://www.gov.hk/" rel="nofollow" target="_blank">香港政府网</a>
+                <a href="http://www.hktdc.com/" rel="nofollow" target="_blank">香港贸易发展局</a>
+                <a href="http://www.ird.gov.hk/" rel="nofollow" target="_blank">香港税务局</a>
+                <a href="http://www.hkma.gov.hk/" rel="nofollow" target="_blank">香港金融管理局</a>
+                <a href="http://www.tid.gov.hk/" rel="nofollow" target="_blank">香港工业贸易署</a>
+                <a href="http://www.fsdc.org.hk/tc/" rel="nofollow" target="_blank">香港金融发展局</a>
+                <a href="/Hong-Kong-Company.html" title="注册香港公司" target="_blank">注册香港公司</a>
+                <a href="http://www.icris.cr.gov.hk/csci/" rel="nofollow" target="_blank">香港公司注册查册</a>
+                <a href="http://www.gov.hk/tc/residents/taxes/etax/services/brn_enquiry.htm" rel="nofollow" target="_blank">香港商业登记证查询</a>
+                <a href="http://ipsearch.ipd.gov.hk/trademark/jsp/main_chi.jsp" rel="nofollow" target="_blank">香港商标查询</a>
+                <a href="http://www.fstb.gov.hk/sc/" rel="nofollow" target="_blank">香港财经事务及库务局</a>
+                <a href="http://www.investhk.gov.hk/zh-cn/" rel="nofollow" target="_blank">香港投资推广署</a>
+                <a href="/article/188.html" target="_blank" style="border:none;">香港公司不能再零申报了</a>
+            </div>
+            
+        </div>
+        <div class="company-msg">
+            <p class="copyright">Copyright © 2004-2018 
+                <a href="http://www.hkshuiwu.com/" title="香港公司税务网">
+                    <strong>香港公司税务网</strong>
+                </a> 
+                ALL Rights Reserved
+            </p>
+            <p class="beian">网站备案号：粤ICP备10223041号 香港政府注册证书：1250308 香港商业登记证号码：39486522-000-06-13-4</p>
+            <p class="tec-support">
+                <a href="http://www.22ba.com/"  title="深圳网站建设" target="_blank">创想工作室</a>提供技术支持
+            </p>
+        </div>
+    </footer>
+    <p id="back-to-top" ><a href="#top"><span><i class="iconfont icon-fanhuidingbu1"></i></span></a></p>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+  
+    <script>
+        //导航条滚动一定距离变为固定定位
+        $(function(){
+            //获取nav距离顶部的距离
+             var navtop=$("#nav").offset().top;
+             $(document).scroll(function(){
+                 //获取滚动条滚动的高度
+                 var scroltop=$(document).scrollTop();
+                 if (scroltop > navtop){
+                      $("#nav").css({
+                          "position":"fixed",
+                          "left":"0px",
+                          "top":"0px",
+                          "z-index":99999
+                      })
+                 }else {
+                     $("#nav").css({
+                         "position":"static"
+                     })
+                 }
+             })
+        });
+        //轮播区域
+        $(function () {
+			var swiper = new Swiper('.banner-swiper', {
+				loop:true,
+				speed:500,
+                pagination: '.swiper-pagination',
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+				paginationClickable: true,
+				spaceBetween: 0,
+				centeredSlides: true,
+				autoplay: 5000,
+				autoplayDisableOnInteraction: false
+			});
+        });
+        //头部导航按钮
+        $(function () {
+			$('.nav-trigger').on('click', function (e) {
+				e.preventDefault();
+				$(this).parent().toggleClass('nav-active');
+            });
+            
+        });
+        // 分页按钮点击颜色切换
+        $(function(){
+            $(".pagination-box li a").mousemove(function(){
+                // var index = $(this).index();
+                $(".pagination-box li a").removeClass("selected");
+                $(this).addClass("selected");
+            })
+        })
+        //返回顶部
+        $(function () {
+            $(window).scroll(function(){
+                    //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+                if ($(window).scrollTop()>100){
+                    $("#back-to-top").fadeIn(300);
+                }
+                else
+                {
+                    $("#back-to-top").fadeOut(300);
+                }
+            });
+            
+            $("#back-to-top").click(function(){
+                $('body,html').animate({scrollTop:0},300);
+                return false;
+            });
+            
+        });
+
+     
+    </script>
+</body>
+</html>

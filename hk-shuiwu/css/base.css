@@ -1,0 +1,88 @@
+@charset "utf-8";
+/*基础样式*/
+*{margin:0;padding:0;}
+html * { 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*去除移动端开发点击事件灰色背景如a标签*/
+     /*不想让iPhone横坚屏切换的时候调节文字*/
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body,td,th { font-family:"微软雅黑", "宋体", Arial, Helvetica, sans-serif; font-size: 14px; }
+
+
+table { border-collapse:collapse; border-spacing:0; }
+fieldset, img { border:none; }
+caption, th { font-weight:normal; }
+caption, th { text-align:left; }
+ul, li, ol { list-style:none outside; }/* outside重置IE6,7缩进 */
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal; }/* 继承父级字体大小 */
+select, input, button, textarea { font-size:100%; }/* 使表单元素能继承父级字体大小 */
+input,select,button{ font:12px Verdana,Arial,Tahoma; vertical-align:middle; }/* 使表单元素能继承父级字体大小 */
+input,textarea,select{ font-family:inherit; font-size:inherit; font-weight:inherit; }/* 使表单元素能继承父级字体大小 */
+input,textarea,select{ *font-size:100%; }/* 使表单元素能继承父级字体大小 */
+input{ border:none;outline:none;-webkit-appearance:none;}/*清除移动端默认的表单样式；如内阴影效果*/
+a{text-decoration: none;color:#000;display: block;} 
+.marginbottom5 { margin-bottom:5px; }
+.marginbottom8 { margin-bottom:8px; }
+.marginleft10 { margin-left:10px; }
+/* 清楚浮动，兼容IE6+ */
+.clearfloat:after{content:'';display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
+.clearfloat{zoom:1;}
+.left { float:left; }
+.right { float:right; }
+.center { text-align:center; }
+.bold { font-weight:bold; }
+.cdred { color:#FF0000; }
+.cdblue { color:blue; }
+.hidden { overflow:hidden; }
+.f14 { font-size:14px; }
+/*修复IE6连续英文不折行导致页面布局崩溃*/
+body {_word-break:break-all; }
+/* 专有属性修复IE7，IE8浏览器强制缩放图片失真 */
+img { -ms-interpolation-mode:bicubic; display:block;}
+/*animated动画样式*/
+@-webkit-keyframes shake {
+    from,
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+@keyframes shake {
+    from,
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}

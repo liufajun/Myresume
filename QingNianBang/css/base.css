@@ -1,0 +1,555 @@
+.containerBox {
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hd_con {
+    margin: 0 auto;
+}
+
+.hd_con .logo {
+    float: left;
+    margin-top: 8px;
+    margin-left: 25px;
+}
+
+.hd_con .list {
+    float: right;
+}
+
+.hd_con .list li {
+    float: left;
+    padding: 0 25px;
+}
+
+.hd_con .list li a {
+    text-align: left;
+    display: block;
+    line-height: 60px;
+    font-size: 18px;
+    position: relative;
+}
+
+.hd_con .list li a:hover {
+    color: #00ABD9;
+}
+
+.hd_con .list li a:before {
+    content: "";
+    display: block;
+    background: #00ABD9;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 12px;
+    transform: scale(0);
+    transition: all .3s ease;
+}
+
+.hd_con .list li a:hover:before {
+    transform: scale(1);
+    transition: all .3s ease;
+}
+
+.hd_con .nav_btn {
+    position: absolute;
+    top: 15px;
+    right: 6%;
+    width: 34px;
+    height: 30px;
+    border-radius: 3px;
+    display: none;
+    border: 2px solid #777;
+}
+
+.hd_con .nav_btn:hover {
+    box-shadow: 0 0 2px #00F;
+}
+
+.hd_con .nav_btn i {
+    display: block;
+    width: 70%;
+    height: 2px;
+    background: #777;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.banner {
+    margin-top: 60px;
+    width: 100%;
+    height: 500px;
+    background: url(../images/banner1.jpg) no-repeat center;
+}
+
+.serve {
+    margin-top: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+.s_title {
+    font-size: 28px;
+    text-align: center;
+    padding: 80px 0 50px;
+}
+
+.serve_con .box {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.serve_con .box a.icon {
+    width: 200px;
+    height: 200px;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    line-height: 200px;
+    transition: all .3s ease;
+}
+
+.serve_con .box a.icon:hover {
+    background: #00ABD9;
+    transition: all .3s ease;
+}
+
+.serve_con .box a.icon:hover i {
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.serve_con .box a i {
+    font-size: 110px;
+    color: #00ABD9;
+    transition: all .3s ease;
+}
+
+.serve_con .box h3 {
+    margin: 40px 0 30px 0;
+    font-size: 24px;
+    color: #555;
+    font-weight: 500;
+    width: 100%;
+}
+
+.serve_con .box p {
+    width: 100%;
+    padding: 0 10%;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6em;
+}
+
+.about {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background: url(../images/about_bg.jpg) no-repeat center;
+}
+
+.about h2 {
+    color: #fff;
+}
+
+.about>p {
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0 6%;
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+.about .about_btn {
+    margin-top: 100px;
+}
+
+.about .about_btn a {
+    display: inline-block;
+    width: 150px;
+    height: 46px;
+    background: #00ABD9;
+    opacity: 0.8;
+    line-height: 46px;
+    color: #fff;
+    margin: 0 10px;
+    border-radius: 3px;
+}
+
+.case_item {
+    width: 100%;
+}
+
+.case_item li {
+    float: left;
+    width: 32%;
+    margin-left: 2%;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.case_item li:nth-child(3n-2) {
+    margin-left: 0;
+}
+
+.case_item li img {
+    width: 100%;
+    height: 100%;
+}
+
+.case_item li a,
+img {
+    display: block;
+    margin: 0 auto;
+    transition: all .4s ease;
+}
+
+.case_item li:hover .translate {
+    transform: translateX(10px);
+    transition: all .4s ease;
+}
+
+.case_item li:hover .scale {
+    transform: scale(1.05);
+    transition: all .4s ease;
+}
+
+.case_item li:hover .rotate {
+    transform: rotate(5deg);
+    transition: all .5s ease;
+}
+
+.client {
+    margin-bottom: 80px;
+}
+
+.client_con li {
+    width: 25%;
+    float: left;
+}
+
+.client_con li img {
+    width: 90%;
+}
+
+.client_con li:hover img {
+    filter: drop-shadow(0px 0px 5px blue);
+}
+
+.footer {
+    padding: 0 5%;
+}
+
+
+.footer .ft_wrap {
+    padding-bottom: 40px;
+    background: #eee;
+}
+
+.ft_logo {
+    padding-bottom: 40px;
+}
+
+.ft_logo>img,
+h3 {
+    float: left;
+}
+
+.ft_logo h3 {
+    padding-left: 10px;
+    padding-top: 7px;
+    font-size: 18px;
+}
+
+.ft_logo h3 p {
+    letter-spacing: 0.5px;
+}
+
+.ft_content {
+    line-height: 22px;
+    width: 23%;
+}
+
+.ft_box .ft_content>p {
+    padding-bottom: 18px;
+    font-size: 22px;
+    color: #00ABD9;
+}
+
+.ft_box .ft_content .ft_contact p {
+    font-size: 14px;
+}
+
+.ft_list {
+    width: 45%;
+    margin-left: 8%;
+}
+
+.ft_list dl {
+    float: left;
+    width: 25%;
+}
+
+.ft_list dl dt {
+    padding-bottom: 18px;
+    font-size: 22px;
+    color: #00ABD9;
+}
+
+.ft_list dl a {
+    display: block;
+    font-size: 12px;
+    line-height: 1.8em;
+}
+
+.ft_list dl a:hover {
+    color: #FF8786;
+}
+
+.ft_weixin {
+    width: 130px;
+    text-align: center;
+}
+
+.ft_weixin img {
+    max-width: 120px;
+}
+
+.ft_weixin p {
+    color: #00ABD9;
+}
+
+.copyright {
+    background: #444;
+    color: #fff;
+    font-size: 18px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+@media all and (max-width: 991px) {
+    .serve_con .box a.icon {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+    }
+    .serve_con .box a i {
+        font-size: 60px;
+    }
+    .serve_con .box h3 {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .serve_con .box p {
+        font-size: 14px;
+        text-align: left;
+    }
+    .about>p {
+        padding: 0 10%;
+        font-size: 18px;
+        line-height: 1.8em;
+    }
+    .client .client_con li {
+        width: 33.3333%;
+    }
+    .ft_box>div {
+        float: none;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+    .ft_box .ft_content {
+        width: 50%;
+    }
+    .ft_box .ft_list {
+        width: 90%;
+        margin: 0 auto ;
+     
+    }
+    .ft_list dl a {
+        font-size: 14px;
+    }
+    @media all and (max-width: 767px) {
+        .containerBox {
+            padding: 0;
+        }
+        .hd_con .nav_btn {
+            display: block;
+        }
+        .hd_con .list {
+            position: fixed;
+            top: 60px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            display: none;
+        }
+        .hd_con .list li {
+            float: none;
+            border-bottom: 1px solid #eee;
+        }
+        .hd_con .list li .a_line {
+            width: 40px;
+        }
+        .hd_con .list li a {
+            width: 75px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .serve_con .box {
+            width: 50%;
+            text-align: center;
+        }
+        .serve_con .box a.icon {
+            width: 130px;
+            height: 130px;
+            line-height: 130px;
+        }
+        .serve_con .box a i {
+            font-size: 70px;
+        }
+        .serve_con .box h3 {
+            font-weight: 400;
+            font-size: 20px;
+        }
+        .serve_con .box p {
+            font-size: 14px;
+            padding: 0 12%;
+            text-align: center;
+        }
+        .about h2 {
+            color: #fff;
+            font-size: 22px;
+        }
+        .about>p {
+            color: rgba(255, 255, 255, 0.9);
+            padding: 0 6%;
+            font-size: 16px;
+            line-height: 1.6em;
+        }
+        .case_item li {
+            width: 48%;
+            margin-right: 4%;
+            margin-left: 0;
+        }
+        .case_item li:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+    @media all and (max-width: 479px) {
+        .serve h2 {
+            font-size: 22px;
+        }
+        .serve_con .box {
+            width: 100%;
+        }
+       
+        .serve_con .box a.icon {
+            width: 160px;
+            height: 160px;
+            display: block;
+            border-radius: 50%;
+            margin: 0 auto;
+            line-height: 160px;
+            transition: all .3s ease;
+        }
+        .serve_con .box h3 {
+            margin: 10px  0 30px;
+            font-size: 24px;
+            color: #555;
+            font-weight: 500;
+            width: 100%;
+        }
+        .serve_con .box a i{
+            font-size:120px;
+        }
+        .about h2 {
+            color: #fff;
+            font-size: 16px;
+        }
+        .about>p {
+            color: rgba(255, 255, 255, 0.9);
+            padding: 0 10%;
+            font-size: 14px;
+            line-height: 1.6em;
+        }
+        .about .about_btn {
+            margin-top: 50px;
+        }
+        .about .about_btn a {
+            display: block;
+            margin: 0 auto 40px;
+        }
+        .case_item li {
+            width: 100%;
+        }
+        .client_con li {
+            width: 50%;
+        }
+        .client_con li img {
+            width: 100%;
+        }
+        .footer .ft_logo{
+            width:90%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin:0 auto;
+            padding-top:70px;
+            padding-bottom:50px;
+            text-align:center;
+            
+        }
+        .ft_logo>img,
+        h3 {
+            float: none;
+            margin-left:0;
+        }
+        .ft_box .ft_content{
+            margin:0 auto 60px;
+            width:100%;
+            padding-left:15%;
+           
+        }
+        
+         .ft_box .ft_content >p:nth-child(1){
+                text-align:center;
+                width:100%;
+                font-size:24px;
+         }
+          
+         .ft_box .ft_content .ft_contact{
+             margin-top:20px;
+         }
+        .ft_box .ft_weixin{
+            margin:40px auto 0;
+        }
+        .copyright {
+            font-size: 12px;
+            height:40px;
+            line-height: 40px;
+            margin-top:0;
+        }
+    }
